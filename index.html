@@ -29,6 +29,68 @@
                <li>book tap ride and come home</li>
 
            </ul>
-           <imgsrc= "Batman_Infobox.jpg"   height=”200” width=“100”alt=“a picture of a ball” ></imgsrc>
+  </ul>       
+  <a href="aboutme.html">about me</a>
+  <hr>
+  <h1>Food Description</h1>
+    <table>
+        
+        <tr>
+            <th>Food/Drink</th>
+            <th>Location</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Pizza</td>
+          <td>Mc Donalds</td>
+          <td> $8.59 </td>
+        </tr>
+        <tr>
+          <td>Burger</td>
+          <td>Burger king</td>
+          <td> $ 15 </td>
+        </tr>
+        <tr>
+            <td>sprite</td>
+            <td>Mc Donalds</td>
+            <td> $ 1 </td>
+          </tr>
+          <tr>
+            <td>shake</td>
+            <td>Sonic</td>
+            <td> $ 3 </td>
+          </tr>
+        
+         </table>
+      <hr>
+
+      <hr>
+      <h1>
+        Ternary Search
+         </h1>
+      <blockquote cite="https://cp-algorithms.com/num_methods/ternary_search.html">We can see that either both of these points belong to the area where the value of the function is maximized, or m1 is in the area of increasing values and m2 is in the area of descending values (here we used the strictness of function increasing/decreasing). Thus, the search space is reduced to [m1,m2]. To simplify the code, this case can be combined with any of the previous cases.
+
+    :</blockquote>
+        For more Information: <a href="https://en.wikipedia.org/wiki/Ternary_search">Click Here</a>
+        <pre>
+            double ternary_search(double l, double r) {
+                double eps = 1e-9;              //set the error limit here
+                while (r - l > eps) {
+                    double m1 = l + (r - l) / 3;
+                    double m2 = r - (r - l) / 3;
+                    double f1 = f(m1);      //evaluates the function at m1
+                    double f2 = f(m2);      //evaluates the function at m2
+                    if (f1 < f2)
+                        l = m1;
+                    else
+                        r = m2;
+                }
+                return f(l);                    //return the maximum of f(x) in [l, r]
+            }
+            }
+        </pre>
+
+
+
 </body>
 </html>
