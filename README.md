@@ -1,3 +1,3 @@
 # WebApps-F21-Assignment-3
 Assignment 3 - Basic HTML
-"Hosted At" https://44-563-WebApps-F21/webapps-f21-assignment-3-ruthvikbhairav.git/
+"Hosted At "https://44-563-WebApps-F21/webapps-f21-assignment-3-ruthvikbhairav/""
